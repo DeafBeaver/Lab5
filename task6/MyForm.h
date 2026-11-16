@@ -656,6 +656,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		}
 	}
 }
+
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 	double R = Convert::ToDouble(textBox1->Text);
 	double R2 = Convert::ToDouble(textBox2->Text);
@@ -679,12 +680,15 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 		dataGridView1->Rows->Add(R + i, V[i]);
 	}
 }
+
 private: System::Void textBox3_TextChanged(System::Object^ sender, System::EventArgs^ e) {}
 	   int size = 0;
 	   array<int, 2>^ first;
 	   array<int, 2>^ second;
 	   array<int, 2>^ newArr;
 	   int step = 0;
+
+	   //циклічне створення матриць
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (step == 0) {
 		try {
